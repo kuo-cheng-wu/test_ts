@@ -1,0 +1,12 @@
+#
+# Builder stage.
+# Compile our TypeScript to get the JavaScript code
+#
+FROM node:14-alpine AS build
+
+WORKDIR /app
+
+COPY ./package.json ./yarn.lock ./environment ./tsconfig.json ./jest.config.ts/ ./
+COPY ./src ./src
+
+RUN yarn

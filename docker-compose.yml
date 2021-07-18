@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  api:
+    build:
+      dockerfile: ./Dockerfile.dev
+      context: .
+    volumes:
+      - ./:/usr/src/app/
+    command: yarn run start:dev:debug
+    working_dir: /usr/src/app/
+    ports:
+      - 3000:3000
+      - 9229:9229

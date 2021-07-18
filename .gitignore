@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+.jest
+.idea
+environment/development.toml
