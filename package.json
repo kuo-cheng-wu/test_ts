@@ -11,7 +11,8 @@
     "test": "jest",
     "test:cov": "jest --coverage",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint:fix": "eslint ./src --fix",
+    "typescript:check": "tsc --noEmit"
   },
   "dependencies": {
     "cls-hooked": "^4.2.2",
