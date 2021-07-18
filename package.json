@@ -39,7 +39,7 @@
     "@types/koa-json": "^2.0.20",
     "@types/koa-pino-logger": "^3.0.0",
     "@types/koa-router": "^7.4.4",
-    "@types/node": "^16.3.1",
+    "@types/node": "^15.14.1",
     "@types/supertest": "^2.0.11",
     "@types/uuid": "^8.3.1",
     "@types/verror": "^1.10.5",
