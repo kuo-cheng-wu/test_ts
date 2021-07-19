@@ -45,6 +45,6 @@ jobs:
           node-version: '16'
       - uses: mattallty/jest-github-action@v1
         env:
-          GITHUB_TOKEN: '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'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           test-command: "yarn test:cov"
