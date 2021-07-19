@@ -1,10 +1,7 @@
 import { get, getStore, set } from './requestStore';
 
 describe('Request store', () => {
-  it('should failed', () => {
-    expect(1).toBe(2);
-  })
-
+  
   it('should return saved item from the store', () => {
     // Arrange
     const store = getStore();
