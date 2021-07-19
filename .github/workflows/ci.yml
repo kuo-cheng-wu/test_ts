@@ -36,3 +36,14 @@ jobs:
         run: yarn install --silent
       - name: Jest
         run: yarn run test
+  jest-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: yarn
+        run: yarn install --silent
+      - name: Jest
+        run: yarn run test:cov
