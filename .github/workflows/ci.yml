@@ -39,11 +39,9 @@ jobs:
   jest-coverage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: devmasx/coverage-check-action@v1.2.0
         with:
-          node-version: '16'
-      - name: yarn
-        run: yarn install --silent
-      - name: Jest
-        run: yarn run test:cov
+          type: simplecov
+          result_path: coverage/.last_run.json
+          min_coverage: 90
+          token: ${{ github.token }}
