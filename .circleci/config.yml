@@ -14,3 +14,6 @@ jobs:
       - run: yarn build
       - run: yarn lint
       - run: yarn test
+      - run: yarn test:cov
+      - store_artifacts:
+          path: coverage

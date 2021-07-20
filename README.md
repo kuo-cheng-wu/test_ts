@@ -1,3 +1,5 @@
+<!-- Getting an Namespace 'NodeJS' has no exported member 'Global' error #11640
+https://github.com/facebook/jest/issues/11640 -->
 # Koa-api-scaffold
 
 This repository is created to be used as a base for Koa + Typescript APIs.
