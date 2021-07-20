@@ -2,7 +2,7 @@ import { get, getStore, set } from './requestStore';
 
 describe('Request store', () => {
   it('should fail', () => {
-    expect(1).toBe(212);
+    expect(1).toBe(213);
   })
 
   it('should return saved item from the store', () => {
